@@ -184,7 +184,7 @@ if (isset($_POST['insert'])) {
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">SKY BANK LIMITED BD</a>
+                <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">NR BANK LIMITED BD</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -207,7 +207,8 @@ if (isset($_POST['insert'])) {
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -261,7 +262,7 @@ if (isset($_POST['insert'])) {
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li class="active">
@@ -457,8 +458,8 @@ if (isset($_POST['insert'])) {
                     <div class="row">
                         <div class="col-lg-4">
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Postal Code</p>
-                            <input type="number" class="form-control" name="postal" value="<?php echo $row['postal']; ?>"
-                                required>
+                            <input type="number" class="form-control" name="postal"
+                                value="<?php echo $row['postal']; ?>" required>
                         </div>
                         <div class="col-lg-4">
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Home Address</p>
@@ -520,11 +521,9 @@ if (isset($_POST['insert'])) {
                     <center>
                         <h4 style="margin-top: -15px;">Contact Us</h4>
                     </center>
-                    <div class="social"><a href="https://www.instagram.com/amirghafoor786/"><i
-                                class="icon ion-social-instagram"></i></a><a href="#"><i
-                                class="icon ion-social-skype"></i></a><a href="https://twitter.com/AmirGha59143587"><i
-                                class="icon ion-social-twitter"></i></a><a
-                            href="https://web.facebook.com/amirghafoor.chaudhry/"><i
+                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                                class="icon ion-social-skype"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
                                 class="icon ion-social-facebook"></i></a></div>
                     <hr style="height:1px;border-width:0; margin-top: -10px; color:gray;background-color:gray">
                     <ul class="list-inline">
@@ -534,7 +533,7 @@ if (isset($_POST['insert'])) {
                         <li class="list-inline-item"><a href="about.php?type=Privacy">Privacy Notice</a></li>
                     </ul>
                     <hr style="height:1px;border-width:0; color:gray;background-color:gray">
-                    <p class="copyright" style="margin-top: 0px;">SKY BANK LIMITED BD © DeepAI 2021</p>
+                    <p class="copyright" style="margin-top: 0px;">NR BANK LIMITED BD © DeepAI 2024</p>
                 </footer>
             </div>
         </div>

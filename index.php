@@ -56,7 +56,7 @@ if (isset($_POST['log'])) {
 <html>
 
 <head>
-    <title>SKY BANK | LOGIN</title>
+    <title>NR BANK | LOGIN</title>
     <link rel="icon" href="images/icc.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/native-toast.css">
@@ -162,7 +162,7 @@ if (isset($_POST['log'])) {
 <body>
     <form class="login-form" method="POST">
         <div class="login-form__logo-container">
-            <h3 style="color: white; text-align: center;">SKY BANK LIMITED BD</h3>
+            <h3 style="color: white; text-align: center;">NR BANK LIMITED BD</h3>
         </div>
         <div class="login-form__content">
             <div class="login-form__header">Welcome on Page</div>

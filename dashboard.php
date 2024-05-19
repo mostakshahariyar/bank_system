@@ -17,7 +17,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sky Bank Limited</title>
+    <title>NR BANK LIMITED</title>
     <!-- Favicon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
@@ -166,7 +166,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="dashboard.php" style="font-size: 18px;">SKY BANK LIMITED BD</a>
+                <a class="navbar-brand" href="dashboard.php" style="font-size: 18px;">NR BANK LIMITED BD</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -849,11 +849,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <center>
                         <h4 style="margin-top: -15px;">Contact Us</h4>
                     </center>
-                    <div class="social"><a href="https://www.instagram.com/amirghafoor786/"><i
-                                class="icon ion-social-instagram"></i></a><a href="#"><i
-                                class="icon ion-social-skype"></i></a><a href="https://twitter.com/AmirGha59143587"><i
-                                class="icon ion-social-twitter"></i></a><a
-                            href="https://web.facebook.com/amirghafoor.chaudhry/"><i
+                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                                class="icon ion-social-skype"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
                                 class="icon ion-social-facebook"></i></a></div>
                     <hr style="height:1px;border-width:0; margin-top: -10px; color:gray;background-color:gray">
                     <ul class="list-inline">
@@ -863,7 +861,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <li class="list-inline-item"><a href="employee/about.php?type=Privacy">Privacy Notice</a></li>
                     </ul>
                     <hr style="height:1px;border-width:0; color:gray;background-color:gray">
-                    <p class="copyright" style="margin-top: 0px;">SKY BANK LIMITED BD © DeepAI 2021</p>
+                    <p class="copyright" style="margin-top: 0px;">NR BANK LIMITED BD © DeepAI 2024</p>
                 </footer>
             </div>
         </div>

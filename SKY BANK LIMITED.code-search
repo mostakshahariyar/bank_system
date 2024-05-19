@@ -1,0 +1,190 @@
+# Query: SKY BANK LIMITED
+# Flags: RegExp
+# ContextLines: 1
+
+40 results - 25 files
+
+dashboard.php:
+   19      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   20:     <title>Nabid BANK LIMITED</title>
+   21      <!-- Favicon-->
+
+  168                  <a href="javascript:void(0);" class="bars"></a>
+  169:                 <a class="navbar-brand" href="dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  170              </div>
+
+  863                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  864:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  865                  </footer>
+
+email.php:
+  16             $mail->AddAddress($address);
+  17:            $mail->SetFrom("your-email@gmail.com", "Nabid BANK LIMITED");
+  18             $mail->Subject  = $header;
+
+forget.php:
+  174          <div class="login-form__logo-container">
+  175:             <h3 style="color: white; text-align: center;">Nabid BANK LIMITED BD</h3>
+  176          </div>
+
+index.php:
+  164          <div class="login-form__logo-container">
+  165:             <h3 style="color: white; text-align: center;">Nabid BANK LIMITED BD</h3>
+  166          </div>
+
+employee\about.php:
+  116                  <a href="javascript:void(0);" class="bars"></a>
+  117:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  118              </div>
+
+  406                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  407:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  408                  </footer>
+
+employee\account_details.php:
+  208                  <a href="javascript:void(0);" class="bars"></a>
+  209:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  210              </div>
+
+  516                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  517:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  518                  </footer>
+
+employee\bank_balance.php:
+  161          <a href="javascript:void(0);" class="bars"></a>
+  162:         <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  163        </div>
+
+employee\change_pin.php:
+  147                  <a href="javascript:void(0);" class="bars"></a>
+  148:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  149              </div>
+
+  382                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  383:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  384                  </footer>
+
+employee\check_balance.php:
+  97                  <a href="javascript:void(0);" class="bars"></a>
+  98:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  99              </div>
+
+employee\deposit.php:
+  136                  <a href="javascript:void(0);" class="bars"></a>
+  137:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  138              </div>
+
+employee\emp_details.php:
+  208                  <a href="javascript:void(0);" class="bars"></a>
+  209:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  210              </div>
+
+  522                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  523:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  524                  </footer>
+
+employee\emp_list.php:
+  212          <a href="javascript:void(0);" class="bars"></a>
+  213:         <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  214        </div>
+
+  576            <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  577:           <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  578          </footer>
+
+employee\emp_profile.php:
+  101                  <a href="javascript:void(0);" class="bars"></a>
+  102:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  103              </div>
+
+  435                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  436:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  437                  </footer>
+
+employee\emp_update.php:
+  197          <a href="javascript:void(0);" class="bars"></a>
+  198:         <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  199        </div>
+
+  640            <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  641:           <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  642          </footer>
+
+employee\history_details.php:
+  161                  <a href="javascript:void(0);" class="bars"></a>
+  162:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  163              </div>
+
+employee\history.php:
+  147          <a href="javascript:void(0);" class="bars"></a>
+  148:         <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  149        </div>
+
+employee\library.php:
+  6      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  7:     <title>Nabid BANK LIMITED</title>
+  8      <!-- Favicon-->
+
+employee\new_emp.php:
+  264                      <a href="javascript:void(0);" class="bars"></a>
+  265:                     <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  266                  </div>
+
+  651                          <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  652:                         <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  653                      </footer>
+
+employee\newaccount.php:
+  244                      <a href="javascript:void(0);" class="bars"></a>
+  245:                     <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  246                  </div>
+
+  586                          <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  587:                         <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  588                      </footer>
+
+employee\search.php:
+  208                  <a href="javascript:void(0);" class="bars"></a>
+  209:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  210              </div>
+
+  540                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  541:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  542                  </footer>
+
+employee\transfer.php:
+  168                  <a href="javascript:void(0);" class="bars"></a>
+  169:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  170              </div>
+
+employee\update.php:
+  186                  <a href="javascript:void(0);" class="bars"></a>
+  187:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  188              </div>
+
+  535                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  536:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  537                  </footer>
+
+employee\user_profile.php:
+  100                  <a href="javascript:void(0);" class="bars"></a>
+  101:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  102              </div>
+
+  440                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  441:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  442                  </footer>
+
+employee\view_profile.php:
+  129                  <a href="javascript:void(0);" class="bars"></a>
+  130:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  131              </div>
+
+  485                      <hr style="height:1px;border-width:0; color:gray;background-color:gray">
+  486:                     <p class="copyright" style="margin-top: 0px;">Nabid BANK LIMITED BD © DeepAI 2021</p>
+  487                  </footer>
+
+employee\withdraw.php:
+  147                  <a href="javascript:void(0);" class="bars"></a>
+  148:                 <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">Nabid BANK LIMITED BD</a>
+  149              </div>

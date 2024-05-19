@@ -145,7 +145,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#navbar-collapse" aria-expanded="false"></a>
         <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">SKY BANK LIMITED BD</a>
+        <a class="navbar-brand" href="../dashboard.php" style="font-size: 18px;">NR BANK LIMITED BD</a>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -167,7 +167,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
         <div class="info-container">
           <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <?php echo $_SESSION['name']; ?></div>
+            <?php echo $_SESSION['name']; ?>
+          </div>
           <div class="email"><?php echo $_SESSION['email']; ?></div>
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">more_vert</i>
@@ -220,7 +221,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </li>
               </ul>
             </li>
-          <?php
+            <?php
           }
           ?>
           <li>
