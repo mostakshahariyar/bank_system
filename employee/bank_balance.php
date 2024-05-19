@@ -181,7 +181,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
         <div class="info-container">
           <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <?php echo $_SESSION['name']; ?></div>
+            <?php echo $_SESSION['name']; ?>
+          </div>
           <div class="email"><?php echo $_SESSION['email']; ?></div>
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">more_vert</i>
@@ -234,7 +235,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </li>
               </ul>
             </li>
-          <?php
+            <?php
           }
           ?>
           <li>
@@ -332,11 +333,11 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
           <?php
           $sl = mysqli_query($con, "SELECT SUM(balance) as total FROM accounts_info");
           $r = mysqli_fetch_array($sl);
-          $number = $r['total'] . ".00 PKR";
+          $number = $r['total'] . ".00 BD";
           if (isset($number)) {
             # code...
           } else {
-            $number = "0.00 PKR";
+            $number = "0.00 BD";
           }
           ?>
           <input type="text" name="pt" value="<?php echo $number ?>" readonly class="form-control">

@@ -818,7 +818,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                                                     <td style="text-align: center;"><?php echo $row['name']; ?></td>
                                                     <td style="text-align: center;"><?php echo $row['account']; ?></td>
                                                     <td style="text-align: center;"><?php echo $row['type']; ?></td>
-                                                    <td style="text-align: center;"><?php echo $row['amount'] . ".00PKR"; ?>
+                                                    <td style="text-align: center;"><?php echo $row['amount'] . ".00BD"; ?>
                                                     </td>
                                                     <td style="text-align: center;"><?php echo $row['dt']; ?></td>
                                                     <td style="text-align: center;"><?php echo $row['tm']; ?></td>

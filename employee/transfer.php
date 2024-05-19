@@ -41,9 +41,9 @@ if (isset($_POST['transfer'])) {
             mysqli_query($con, "INSERT INTO account_history(account,sender,s_name,reciever,r_name,dt,tm,type,amount) VALUES('$acc1','$acc','$name','$acc1','$name1','$regisdate','$tms','Recieved','$newbnc')");
             $connected = @fsockopen("www.google.com", 80);
             if ($connected) {
-                $msg = "Hello dear " . $name . "! You have made transection on ." . $tms1 . " from SKY BANK ACCOUNT that is done successfully. Amount " . $newbnc . ".00PKR is send to " . $acc1 . " successfully. Your remaining account balance is " . $bnc1 . ".00PKR. Thank you for joining SKY BANK service.";
+                $msg = "Hello dear " . $name . "! You have made transection on ." . $tms1 . " from SKY BANK ACCOUNT that is done successfully. Amount " . $newbnc . ".00BD is send to " . $acc1 . " successfully. Your remaining account balance is " . $bnc1 . ".00BD. Thank you for joining SKY BANK service.";
                 email_send($email, "Transection done successfully", $msg);
-                $msg1 = "Hello dear " . $name1 . "! You have recieved amount " . $newbnc . ".00PKR on " . $tms1 . " in your SKY BANK ACCOUNT from account nunmber " . $acc . ". Your current account balance is " . $bnc2 . ".00PKR. Thank you for joining SKY BANK service.";
+                $msg1 = "Hello dear " . $name1 . "! You have recieved amount " . $newbnc . ".00BD on " . $tms1 . " in your SKY BANK ACCOUNT from account nunmber " . $acc . ". Your current account balance is " . $bnc2 . ".00BD. Thank you for joining SKY BANK service.";
                 email_send($email1, "Recieved Amount", $msg1);
             }
             $_SESSION["title"] = "Done";
@@ -189,7 +189,8 @@ if (isset($_POST['transfer'])) {
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -243,7 +244,7 @@ if (isset($_POST['transfer'])) {
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li>
@@ -406,8 +407,8 @@ if (isset($_POST['transfer'])) {
                                         <div class="col-sm-6">
                                             <p for="exampleInputEmail1" style="margin-bottom: 1px; margin-top: 8px;">Sender Account
                                                 Number</p>
-                                            <input type="text" class="form-control" name="sender2" value="<?php echo $row['account']; ?>"
-                                                readonly>
+                                            <input type="text" class="form-control" name="sender2"
+                                                value="<?php echo $row['account']; ?>" readonly>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -418,8 +419,8 @@ if (isset($_POST['transfer'])) {
                                                 value="<?php echo $row1['account_title']; ?>" readonly>
                                             <input type="hidden" class="form-control" name="blnc1"
                                                 value="<?php echo $row1['balance']; ?>" readonly>
-                                            <input type="hidden" class="form-control" name="email1" value="<?php echo $row1['email']; ?>"
-                                                readonly>
+                                            <input type="hidden" class="form-control" name="email1"
+                                                value="<?php echo $row1['email']; ?>" readonly>
                                             <input type="hidden" class="form-control" name="name1" value="<?php echo $row1['name']; ?>"
                                                 readonly>
                                         </div>

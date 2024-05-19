@@ -118,7 +118,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -172,7 +173,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li>
@@ -321,7 +322,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                             <div class="col-sm-6">
                                 <p for="exampleInputEmail1" style="margin-bottom: 1px; margin-top: 8px;">Current Balance</p>
                                 <input type="text" class="form-control" name="reciever2"
-                                    value="<?php echo $row['balance'] . ".00 PKR"; ?>" readonly>
+                                    value="<?php echo $row['balance'] . ".00 BD"; ?>" readonly>
                             </div>
                         </div>
                         <hr

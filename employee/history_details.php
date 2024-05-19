@@ -182,7 +182,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -236,7 +237,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li>
@@ -329,18 +330,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div class="block-header">
                 <div class="col-sm-8">
                     <p style="margin-left: -15px; font-size: 17px; font-weight: bold;">
-                        <?php echo $_GET["ty"] . " Balance History" ?></p>
+                        <?php echo $_GET["ty"] . " Balance History" ?>
+                    </p>
                 </div>
                 <div class="col-sm-4">
                     <?php
                     $type2 = $_GET["ty"];
                     $sl = mysqli_query($con, "SELECT SUM(amount) as total FROM account_history where type='$type2'");
                     $r = mysqli_fetch_array($sl);
-                    $number = $r['total'] . ".00 PKR";
+                    $number = $r['total'] . ".00 BD";
                     if (isset($number)) {
                         # code...
                     } else {
-                        $number = "0.00 PKR";
+                        $number = "0.00 BD";
                     }
                     ?>
                     <input type="text" name="pt" value="<?php echo $number ?>" readonly class="form-control">
@@ -422,7 +424,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                                         }
                                         ?>
                                         <td style="text-align: center;padding-top: 25px;">
-                                            <?php echo $row['dt'] . " " . $row['tm']; ?></td>
+                                            <?php echo $row['dt'] . " " . $row['tm']; ?>
+                                        </td>
                                         <td style="text-align: center;padding-top: 25px;"><?php echo $row['type']; ?></td>
                                         <td style="text-align: center;padding-top: 25px;"><?php echo $row['amount'] . ".00"; ?>
                                         </td>

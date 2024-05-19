@@ -29,7 +29,7 @@ if (isset($_POST['transfer'])) {
             mysqli_query($con, "INSERT INTO account_history(account,sender,s_name,reciever,r_name,dt,tm,type,amount) VALUES('$acc','$acc','$name','null','null','$regisdate','$tms','Withdraw','$newbnc')");
             $connected = @fsockopen("www.google.com", 80);
             if ($connected) {
-                $msg = "Hello dear " . $name . "! You have withdraw balance from your SKY BANK account  on " . $tms1 . ". Amount " . $newbnc . ".00PKR withdraw successfully. Your remaining account balance is " . $bnc1 . ".00PKR. Thank you for joining SKY BANK service.";
+                $msg = "Hello dear " . $name . "! You have withdraw balance from your SKY BANK account  on " . $tms1 . ". Amount " . $newbnc . ".00BD withdraw successfully. Your remaining account balance is " . $bnc1 . ".00BD. Thank you for joining SKY BANK service.";
                 email_send($email, "Amount withdraw successfully", $msg);
             }
             $_SESSION["title"] = "Done";
@@ -168,7 +168,8 @@ ob_end_flush();
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -222,7 +223,7 @@ ob_end_flush();
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li>
@@ -374,7 +375,7 @@ ob_end_flush();
                                 <div class="col-sm-6">
                                     <p for="exampleInputEmail1" style="margin-bottom: 1px; margin-top: 8px;">Current Balance</p>
                                     <input type="text" class="form-control" name="blnc"
-                                        value="<?php echo $row['balance'] . ".00 PKR"; ?>" readonly>
+                                        value="<?php echo $row['balance'] . ".00 BD"; ?>" readonly>
                                 </div>
                             </div>
                             <hr

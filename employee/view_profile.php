@@ -15,30 +15,30 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $with = mysqli_fetch_array(mysqli_query($con, "SELECT SUM(amount) as total1 FROM account_history where account='$id' and type='Withdraw'"));
 $with1 = $with['total1'];
 if (isset($with1)) {
-    $with1 = $with['total1'] . ".00PKR";
+    $with1 = $with['total1'] . ".00BD";
 } else {
-    $with1 = "0.00PKR";
+    $with1 = "0.00BD";
 }
 $sent = mysqli_fetch_array(mysqli_query($con, "SELECT SUM(amount) as total1 FROM account_history where account='$id' and type='Transection'"));
 $sent1 = $sent['total1'];
 if (isset($sent1)) {
-    $sent1 = $sent['total1'] . ".00PKR";
+    $sent1 = $sent['total1'] . ".00BD";
 } else {
-    $sent1 = "0.00PKR";
+    $sent1 = "0.00BD";
 }
 $gt = mysqli_fetch_array(mysqli_query($con, "SELECT SUM(amount) as total1 FROM account_history where account='$id' and type='Recieved'"));
 $gt1 = $gt['total1'];
 if (isset($gt1)) {
-    $gt1 = $gt['total1'] . ".00PKR";
+    $gt1 = $gt['total1'] . ".00BD";
 } else {
-    $gt1 = "0.00PKR";
+    $gt1 = "0.00BD";
 }
 $dp = mysqli_fetch_array(mysqli_query($con, "SELECT SUM(amount) as total1 FROM account_history where account='$id' and type='Deposit'"));
 $dp1 = $dp['total1'];
 if (isset($dp1)) {
-    $dp1 = $dp['total1'] . ".00PKR";
+    $dp1 = $dp['total1'] . ".00BD";
 } else {
-    $dp1 = "0.00PKR";
+    $dp1 = "0.00BD";
 }
 ?>
 <!DOCTYPE html>
@@ -150,7 +150,8 @@ if (isset($dp1)) {
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['name']; ?></div>
+                        <?php echo $_SESSION['name']; ?>
+                    </div>
                     <div class="email"><?php echo $_SESSION['email']; ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -204,7 +205,7 @@ if (isset($dp1)) {
                                 </li>
                             </ul>
                         </li>
-                    <?php
+                        <?php
                     }
                     ?>
                     <li class="active">
@@ -380,8 +381,8 @@ if (isset($dp1)) {
                     <div class="row">
                         <div class="col-lg-4">
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Postal Code</p>
-                            <input type="number" class="form-control" name="postal" value="<?php echo $row['postal']; ?>"
-                                readonly>
+                            <input type="number" class="form-control" name="postal"
+                                value="<?php echo $row['postal']; ?>" readonly>
                         </div>
                         <div class="col-lg-4">
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Home Address</p>
@@ -426,7 +427,7 @@ if (isset($dp1)) {
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Current Balance
                             </p>
                             <input type="text" class="form-control" name="bnc"
-                                value="<?php echo $row['balance'] . ".00PKR"; ?>" readonly>
+                                value="<?php echo $row['balance'] . ".00BD"; ?>" readonly>
                         </div>
                         <div class="col-lg-2">
                             <p for="exampleInputPassword1" style="margin-bottom: 1px; margin-top: 8px;">Deposit Balance

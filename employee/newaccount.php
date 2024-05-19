@@ -14,7 +14,7 @@ $rslt = mysqli_query($con, $sql_qery);
 $rzst = mysqli_fetch_array($rslt, MYSQLI_ASSOC);
 $acc_num = $rzst["acc_count"];
 $acc_num = $acc_num + 1;
-$acc_full = "PKR10" . $acc_num;
+$acc_full = "BD10" . $acc_num;
 if (isset($_POST['insert'])) {
     $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
     $name = $_POST['name'];
@@ -63,7 +63,7 @@ if (isset($_POST['insert'])) {
             mysqli_query($con, "INSERT INTO account_history(account,sender,s_name,reciever,r_name,dt,tm,type,amount) VALUES('$acc_full','$acc_full','$name','null','null','$regisdate','$tms','Deposit','$balance')");
             $connected = @fsockopen("www.google.com", 80);
             if ($connected) {
-                $msg = "Hello dear " . $name . "! Your have deposit balance on opening new SKY BANK account  on " . $tms1 . ". Amount " . $balance . ".00PKR deposit successfully. Your current account balance is " . $balance . ".00PKR. Thank you for joining SKY BANK service.";
+                $msg = "Hello dear " . $name . "! Your have deposit balance on opening new SKY BANK account  on " . $tms1 . ". Amount " . $balance . ".00BD deposit successfully. Your current account balance is " . $balance . ".00BD. Thank you for joining SKY BANK service.";
                 email_send($email, "Account created successfully", $msg);
             }
             $_SESSION["title"] = "Done";
@@ -266,7 +266,8 @@ if (isset($_POST['insert'])) {
                     </div>
                     <div class="info-container">
                         <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <?php echo $_SESSION['name']; ?></div>
+                            <?php echo $_SESSION['name']; ?>
+                        </div>
                         <div class="email"><?php echo $_SESSION['email']; ?></div>
                         <div class="btn-group user-helper-dropdown">
                             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -320,7 +321,7 @@ if (isset($_POST['insert'])) {
                                     </li>
                                 </ul>
                             </li>
-                        <?php
+                            <?php
                         }
                         ?>
                         <li class="active">

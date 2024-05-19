@@ -286,7 +286,8 @@ if (isset($_POST['insert'])) {
                     </div>
                     <div class="info-container">
                         <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <?php echo $_SESSION['name']; ?></div>
+                            <?php echo $_SESSION['name']; ?>
+                        </div>
                         <div class="email"><?php echo $_SESSION['email']; ?></div>
                         <div class="btn-group user-helper-dropdown">
                             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
@@ -340,7 +341,7 @@ if (isset($_POST['insert'])) {
                                     </li>
                                 </ul>
                             </li>
-                        <?php
+                            <?php
                         }
                         ?>
                         <li>
@@ -435,13 +436,11 @@ if (isset($_POST['insert'])) {
                         <p style="margin-left: -15px; font-size: 17px; font-weight: bold;">Registration form</p>
                     </div>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="gender"
-                            value="<?php if ($_SESSION['type'] == "Default") {
-                                echo "ADN" . $acc_num . "  |  EMP" . $acc_num;
-                            } else {
-                                echo "EMP" . $acc_num;
-                            } ?>"
-                            readonly>
+                        <input type="text" class="form-control" name="gender" value="<?php if ($_SESSION['type'] == "Default") {
+                            echo "ADN" . $acc_num . "  |  EMP" . $acc_num;
+                        } else {
+                            echo "EMP" . $acc_num;
+                        } ?>" readonly>
                     </div>
                 </div>
                 <!-- Widgets -->
@@ -607,7 +606,7 @@ if (isset($_POST['insert'])) {
                                     <?php if ($_SESSION['type'] == "Default") {
                                         ?>
                                         <option value="Admin">Assistant Admin</option>
-                                    <?php
+                                        <?php
                                     }
                                     ?>
                                 </select>
